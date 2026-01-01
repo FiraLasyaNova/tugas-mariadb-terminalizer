@@ -1,0 +1,575 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\Zyrex\nama-folder-project
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 168
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 44
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 4719
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 14
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 2671
+    content: 'PS C:\Users\Zyrex\nama-folder-project> '
+  - delay: 21224
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93mcd\e[?25h"
+  - delay: 17
+    content: "\e[25l\e[m\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\bin\"\r\n\e[?25h"
+  - delay: 370
+    content: "\e[mPS C:\\Program Files\\MariaDB 12.1\\bin> "
+  - delay: 15
+    content: "\e[93m.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\r\n"
+  - delay: 200
+    content: "\e[m"
+  - delay: 16
+    content: 'Enter password: '
+  - delay: 3363
+    content: '*'
+  - delay: 266
+    content: '*'
+  - delay: 264
+    content: '*'
+  - delay: 134
+    content: '*'
+  - delay: 266
+    content: '*'
+  - delay: 254
+    content: '*'
+  - delay: 840
+    content: '*'
+  - delay: 428
+    content: '*'
+  - delay: 843
+    content: "\r\n"
+  - delay: 122
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 17
+    content: "\r\nYour MariaDB connection id is 18\e[46X\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[33X\r\n\e[78X\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[10X\r\n\e[78X\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\e[78X\r\nMariaDB [(none)]> \e[60X"
+  - delay: 5031
+    content: U
+  - delay: 345
+    content: S
+  - delay: 563
+    content: E
+  - delay: 501
+    content: ' '
+  - delay: 1587
+    content: p
+  - delay: 123
+    content: e
+  - delay: 277
+    content: r
+  - delay: 253
+    content: p
+  - delay: 330
+    content: u
+  - delay: 188
+    content: s
+  - delay: 664
+    content: k
+  - delay: 252
+    content: u
+  - delay: 1485
+    content: ;
+  - delay: 2269
+    content: "\r\n"
+  - delay: 15
+    content: "Database changed    \r\nMariaDB [perpusku]> "
+  - delay: 2966
+    content: S
+  - delay: 522
+    content: H
+  - delay: 465
+    content: O
+  - delay: 307
+    content: W
+  - delay: 268
+    content: ' '
+  - delay: 671
+    content: D
+  - delay: 198
+    content: A
+  - delay: 246
+    content: T
+  - delay: 207
+    content: A
+  - delay: 207
+    content: B
+  - delay: 210
+    content: A
+  - delay: 298
+    content: S
+  - delay: 248
+    content: E
+  - delay: 271
+    content: S
+  - delay: 903
+    content: ;
+  - delay: 378
+    content: "\r\n"
+  - delay: 9
+    content: "\e[25l+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| information_schema |\r\n| myperpus           |\r\n| myroom             |\r\n| mysql              |\r\n| performance_s       \e[27;16H\e[?25h"
+  - delay: 16
+    content: "\e[25l\r| performance_schema |    \r\n| perpus             |    \r\n| perpusku           |    \r\n| perpustakaan       |    \r\n| sys                |    \r\n| test               |    \r\n+--------------------+    \r\n10 rows in set (0.004 sec)\r\n\e[26X\r\nMariaDB [perpusku]>       \e[36;21H\e[?25h"
+  - delay: 2333
+    content: S
+  - delay: 333
+    content: H
+  - delay: 385
+    content: O
+  - delay: 300
+    content: W
+  - delay: 429
+    content: ' '
+  - delay: 1341
+    content: D
+  - delay: 250
+    content: A
+  - delay: 507
+    content: T
+  - delay: 233
+    content: A
+  - delay: 207
+    content: B
+  - delay: 153
+    content: A
+  - delay: 279
+    content: S
+  - delay: 277
+    content: E
+  - delay: 856
+    content: (
+  - delay: 289
+    content: )
+  - delay: 789
+    content: ;
+  - delay: 335
+    content: "\r\n"
+  - delay: 10
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATABASE()'\r\n at line 1\e[K\r\nMariaDB [perpusku]> \e[K"
+  - delay: 11931
+    content: S
+  - delay: 294
+    content: E
+  - delay: 263
+    content: L
+  - delay: 201
+    content: E
+  - delay: 806
+    content: "\b \b"
+  - delay: 194
+    content: "\b \b"
+  - delay: 181
+    content: "\b \b"
+  - delay: 672
+    content: H
+  - delay: 464
+    content: O
+  - delay: 771
+    content: W
+  - delay: 394
+    content: ' '
+  - delay: 814
+    content: T
+  - delay: 338
+    content: A
+  - delay: 202
+    content: B
+  - delay: 726
+    content: L
+  - delay: 170
+    content: E
+  - delay: 384
+    content: S
+  - delay: 1328
+    content: ;
+  - delay: 533
+    content: "\r\n+--------------------+\r\n| Tables_in_perpusku |\r\n+--------------------+\r\n| anggota            |\r\n| buku               |\r\n| detail_peminjaman  |\r\n| peminjaman         |\r\n| services           |\r\n+--------------------+"
+  - delay: 6
+    content: "\r\n5 rows in set (0.002 sec)"
+  - delay: 5
+    content: "\r\n\nMariaDB [perpusku]>\e[1C"
+  - delay: 4418
+    content: S
+  - delay: 205
+    content: E
+  - delay: 330
+    content: E
+  - delay: 246
+    content: L
+  - delay: 332
+    content: E
+  - delay: 640
+    content: "\b \b"
+  - delay: 193
+    content: "\b \b"
+  - delay: 321
+    content: "\b \b"
+  - delay: 649
+    content: L
+  - delay: 161
+    content: E
+  - delay: 364
+    content: C
+  - delay: 272
+    content: T
+  - delay: 366
+    content: ' '
+  - delay: 1240
+    content: '*'
+  - delay: 372
+    content: ' '
+  - delay: 714
+    content: F
+  - delay: 186
+    content: R
+  - delay: 163
+    content: O
+  - delay: 302
+    content: M
+  - delay: 418
+    content: ' '
+  - delay: 1536
+    content: a
+  - delay: 257
+    content: 'n'
+  - delay: 484
+    content: g
+  - delay: 190
+    content: g
+  - delay: 369
+    content: o
+  - delay: 378
+    content: t
+  - delay: 181
+    content: a
+  - delay: 889
+    content: ','
+  - delay: 834
+    content: "\b \b"
+  - delay: 408
+    content: ;
+  - delay: 303
+    content: "\r\n+------------+----------------+--------------------+----------------+\r\n| id_anggota | nama           | alamat             | tanggal_daftar |\r\n+------------+----------------+--------------------+----------------+\r\n|          1 | Raka Pratama   | Jl. Merpati No. 10 | 2025-01-12     |\r\n|          2 | Sinta Dewi     | Jl. Anggrek No. 7  | 2025-01-15     |\r\n|          3 | Andi Wijaya    | Jl. Melati No. 5   | 2025-03-10     |\r\n|          4 | Rani Kusuma    | Jl. Melati No. 5   | NULL           |\r\n|          5 | Dedi Santoso   | Jl. Mawar No. 12   | NULL           |"
+  - delay: 9
+    content: "\r\n|          6 | Lina Wulandari | Jl. Kenanga No. 8  | NULL           |\r\n|          7 | Bayu Saputra   | Jl. Dahlia No. 3   | NULL           |\r\n|          8 | Alya Pramudita | Jl. Cendana 10     | NULL           |"
+  - delay: 7
+    content: "\r\n|          9 | Bima Aditya    | Jl. Cempaka 21     | NULL           |\r\n|         10 | Chandra Putra  | Jl. Flamboyan 5    | NULL           |\r\n+------------+----------------+--------------------+----------------+\r\n10 rows in set (0.002 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [perpusku]>\e[1C"
+  - delay: 3122
+    content: S
+  - delay: 290
+    content: E
+  - delay: 456
+    content: L
+  - delay: 517
+    content: W
+  - delay: 305
+    content: C
+  - delay: 232
+    content: T
+  - delay: 935
+    content: "\b \b"
+  - delay: 191
+    content: "\b \b"
+  - delay: 185
+    content: "\b \b"
+  - delay: 800
+    content: E
+  - delay: 384
+    content: C
+  - delay: 339
+    content: T
+  - delay: 275
+    content: ' '
+  - delay: 2432
+    content: '*'
+  - delay: 396
+    content: ' '
+  - delay: 348
+    content: F
+  - delay: 238
+    content: R
+  - delay: 159
+    content: O
+  - delay: 289
+    content: M
+  - delay: 458
+    content: ' '
+  - delay: 2448
+    content: b
+  - delay: 1022
+    content: u
+  - delay: 517
+    content: k
+  - delay: 226
+    content: u
+  - delay: 1099
+    content: ;
+  - delay: 1190
+    content: "\r\n"
+  - delay: 38
+    content: "+---------+-------------------------------+----------------+--------------+---------------+\r\n| id_buku | judul                         | penulis        | tahun_terbit | isbn          |\r\n+---------+-------------------------------+----------------+--------------+---------------+\r\n|       1 | Algoritma dan Struktur Data   | Joko Santoso   |         2019 | 9786024456789 |\r\n|       3 | Belajar MariaDB               | Siti Lestari   |         2021 | 9786027788990 |\r\n|       4 | Manajemen Basis Data Modern   | Ahmad Yusuf    |         2020 | 9786021123456 |\r\n|       5 | Pengantar Teknologi Informasi | Rudi Hartono   |         2017 | 9786025566778 |\r\n|       6 | Jaringan Komputer             | Ari Nugroho    |         2016 | 9786021234567 |\r\n|       7 | Pemrograman Dasar             | Yuni Astuti    |         2019 | 9786028888881 |\r\n|       8 | Keamanan Data                 | Firman Hidayat |         2020 | 9786027777772 |\r\n|       9 | Sistem Informasi Perpustakaan | Dian Pratama   |         2022 | 9786024444445 |\r\n|      10 | Statistik untuk Sains         | Teguh Prasetyo |         2015 | 9786023211111 |\r\n|      11 | Kecerdasan Buatan             | Nur Aisyah     |         2021 | 9786023212222 |\r\n|      12 | Dasar Pemrograman Web         | Indra Kusuma   |         2018 | 9786023213333 |\r\n+---------+-------------------------------+----------------+--------------+---------------+\r\n11 rows in set (0.002 sec)\r\n\nMariaDB [perpusku]>\e[1C"
+  - delay: 3282
+    content: S
+  - delay: 266
+    content: E
+  - delay: 225
+    content: L
+  - delay: 470
+    content: W
+  - delay: 312
+    content: C
+  - delay: 231
+    content: T
+  - delay: 1097
+    content: "\b \b"
+  - delay: 170
+    content: "\b \b"
+  - delay: 401
+    content: "\b \b"
+  - delay: 524
+    content: E
+  - delay: 414
+    content: C
+  - delay: 212
+    content: T
+  - delay: 396
+    content: ' '
+  - delay: 984
+    content: '*'
+  - delay: 551
+    content: ' '
+  - delay: 324
+    content: F
+  - delay: 220
+    content: R
+  - delay: 259
+    content: O
+  - delay: 259
+    content: M
+  - delay: 295
+    content: ' '
+  - delay: 4166
+    content: p
+  - delay: 194
+    content: e
+  - delay: 222
+    content: m
+  - delay: 926
+    content: i
+  - delay: 293
+    content: 'n'
+  - delay: 674
+    content: j
+  - delay: 204
+    content: a
+  - delay: 146
+    content: m
+  - delay: 121
+    content: a
+  - delay: 233
+    content: 'n'
+  - delay: 970
+    content: ;
+  - delay: 498
+    content: "\r\n+---------------+------------+---------+----------------+-----------------+\r\n| id_peminjaman | id_anggota | id_buku | tanggal_pinjam | tanggal_kembali |\r\n+---------------+------------+---------+----------------+-----------------+\r\n|             1 |          2 |       3 | 2025-01-20     | NULL            |\r\n|             2 |          1 |       2 | 2025-02-01     | NULL            |\r\n|             3 |          2 |       3 | 2025-02-02     | NULL            |"
+  - delay: 8
+    content: "\r\n|             4 |          1 |       2 | 2025-02-01     | NULL            |\r\n|             5 |          2 |       3 | 2025-02-02     | NULL            |\r\n|             6 |          1 |       2 | 2025-02-01     | NULL            |"
+  - delay: 7
+    content: "\r\n|             7 |          2 |       3 | 2025-02-02     | NULL            |\r\n+---------------+------------+---------+----------------+-----------------+\r\n7 rows in set (0.001 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [perpusku]>\e[1C"
+  - delay: 8870
+    content: S
+  - delay: 145
+    content: E
+  - delay: 481
+    content: L
+  - delay: 151
+    content: E
+  - delay: 336
+    content: C
+  - delay: 281
+    content: T
+  - delay: 332
+    content: ' '
+  - delay: 454
+    content: '*'
+  - delay: 483
+    content: ' '
+  - delay: 562
+    content: F
+  - delay: 209
+    content: R
+  - delay: 193
+    content: O
+  - delay: 271
+    content: M
+  - delay: 304
+    content: ' '
+  - delay: 1199
+    content: s
+  - delay: 346
+    content: e
+  - delay: 314
+    content: r
+  - delay: 399
+    content: v
+  - delay: 278
+    content: i
+  - delay: 373
+    content: c
+  - delay: 119
+    content: e
+  - delay: 337
+    content: s
+  - delay: 1085
+    content: ;
+  - delay: 462
+    content: "\r\n+------------+-------------------+----------+----------+\r\n| id_layanan | nama_layanan      | Kategori | Harga    |\r\n+------------+-------------------+----------+----------+\r\n|          1 | Instalasi Windows | Software | Rp65.000 |\r\n+------------+-------------------+----------+----------+\r\n1 row in set (0.002 sec)\r\n"
+  - delay: 18
+    content: "\nMariaDB [perpusku]>\e[1C"
+  - delay: 20748
+    content: E
+  - delay: 368
+    content: X
+  - delay: 306
+    content: I
+  - delay: 361
+    content: T
+  - delay: 881
+    content: ;
+  - delay: 326
+    content: "\r\nBye"
+  - delay: 23
+    content: "\r\nPS C:\\Program Files\\MariaDB 12.1\\bin>\e[1C"
+  - delay: 3320
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93me\e[?25h"
+  - delay: 333
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bex\e[?25h"
+  - delay: 254
+    content: "\e[m\e[?25l"
+  - delay: 37
+    content: "\e[93m\e[44;39Hexi\e[?25h"
+  - delay: 259
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[92m\e[44;39Hexit\e[?25h"
+  - delay: 1424
+    content: "\e[25l\e[m\e[HMariaDB [perpusku]> SELECT * FROM buku;\e[K\r\n+---------+-------------------------------+----------------+--------------+---------------+\e[K\r\n| id_buku | judul                         | penulis        | tahun_terbit | isbn          |\e[K\r\n+---------+-------------------------------+----------------+--------------+---------------+\e[K\r\n|       1 | Algoritma dan Struktur Data   | Joko Santoso   |         2019 | 9786024456789 |\e[K\r\n|       3 | Belajar MariaDB               | Siti Lestari   |         2021 | 9786027788990 |\e[K\r\n|       4 | Manajemen Basis Data Modern   | Ahmad Yusuf    |         2020 | 9786021123456 |\e[K\r\n|       5 | Pengantar Teknologi Informasi | Rudi Hartono   |         2017 | 9786025566778 |\e[K\r\n|       6 | Jaringan Komputer             | Ari Nugroho    |         2016 | 9786021234567 |\e[K\r\n|       7 | Pemrograman Dasar             | Yuni Astuti    |         2019 | 9786028888881 |\e[K\r\n|       8 | Keamanan Data                 | Firman Hidayat |         2020 | 9786027777772 |\e[K\r\n|       9 | Sistem Informasi Perpustakaan | Dian Pratama   |         2022 | 9786024444445 |\e[K\r\n|      10 | Statistik untuk Sains         | Teguh Prasetyo |         2015 | 9786023211111 |\e[K\r\n|      11 | Kecerdasan Buatan             | Nur Aisyah     |         2021 | 9786023212222 |\e[K\r\n|      12 | Dasar Pemrograman Web         | Indra Kusuma   |         2018 | 9786023213333 |\e[K\r\n+---------+-------------------------------+----------------+--------------+---------------+\e[K\r\n11 rows in set (0.002 sec)\e[K\r\n\e[K\r\nMariaDB [perpusku]> SELECT * FROM peminjaman;\e[K\r\n+---------------+------------+---------+----------------+-----------------+\e[K\r\n| id_peminjaman | id_anggota | id_buku | tanggal_pinjam | tanggal_kembali |\e[K\r\n+---------------+------------+---------+----------------+-----------------+\e[K\r\n|             1 |          2 |       3 | 2025-01-20     | NULL            |\e[K\r\n|             2 |          1 |       2 | 2025-02-01     | NULL            |\e[K\r\n|             3 |          2 |       3 | 2025-02-02     | NULL            |\e[K\r\n|             4 |          1 |       2 | 2025-02-01     | NULL            |\e[K\r\n|             5 |          2 |       3 | 2025-02-02     | NULL            |\e[K\r\n|             6 |          1 |       2 | 2025-02-01     | NULL            |\e[K\r\n|             7 |          2 |       3 | 2025-02-02     | NULL            |\e[K\r\n+---------------+------------+---------+----------------+-----------------+\e[K\r\n7 rows in set (0.001 sec)\e[K\r\n\e[K\r\nMariaDB [perpusku]> SELECT * FROM services;\e[K\r\n+------------+-------------------+----------+----------+\e[K\r\n| id_layanan | nama_layanan      | Kategori | Harga    |\e[K\r\n+------------+-------------------+----------+----------+\e[K\r\n|          1 | Instalasi Windows | Software | Rp65.000 |\e[K\r\n+------------+-------------------+----------+----------+\e[K\r\n1 row in set (0.002 sec)\e[K\r\n\e[K\r\nMariaDB [perpusku]> EXIT;\e[K\r\nBye\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[92mexit\e[m\e[K\r\n\e[K\e[42C\e[?25h"
+  - delay: 13
+    content: "\r"
