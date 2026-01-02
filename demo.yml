@@ -1,0 +1,861 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\Zyrex\nama-folder-project
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 4756
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h\e[25l\e[6;1H\e[?25h"
+  - delay: 4268
+    content: 'PS C:\Users\Zyrex\nama-folder-project> '
+  - delay: 106868
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93mc\e[?25h"
+  - delay: 136
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bcd\e[?25h"
+  - delay: 414
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;40Hcd\e[m \e[?25h"
+  - delay: 1314
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[91m\e[6;38H> \e[93mcd\e[m \e[36m\"\e[?25h"
+  - delay: 985
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"D\e[?25h"
+  - delay: 1172
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"\e[m \b\e[?25h"
+  - delay: 161
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[6;38H> \e[93mcd\e[m  \b\e[?25h"
+  - delay: 149
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;40Hcd\e[m \b\e[?25h"
+  - delay: 151
+    content: "\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;40Hc\e[m \b\e[?25h"
+  - delay: 167
+    content: "\e[?25l"
+  - delay: 20
+    content: "\b \b\e[?25h"
+  - delay: 1301
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93mc\e[?25h"
+  - delay: 207
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bcd\e[?25h"
+  - delay: 6129
+    content: "\e[m\e[?25l"
+  - delay: 29
+    content: "\e[93m\e[6;40Hcd\e[m \e[?25h"
+  - delay: 3035
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[91m\e[6;38H> \e[93mcd\e[m \e[36m\"\e[?25h"
+  - delay: 1524
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C\e[?25h"
+  - delay: 2822
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\e[?25h"
+  - delay: 591
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\\e[?25h"
+  - delay: 3124
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\M\e[?25h"
+  - delay: 693
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\\e[m \b\e[?25h"
+  - delay: 339
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\P\e[?25h"
+  - delay: 509
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Pr\e[?25h"
+  - delay: 122
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Pro\e[?25h"
+  - delay: 790
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Prog\e[?25h"
+  - delay: 239
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Progr\e[?25h"
+  - delay: 115
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Progra\e[?25h"
+  - delay: 321
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program\e[?25h"
+  - delay: 320
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program \e[?25h"
+  - delay: 2425
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program F\e[?25h"
+  - delay: 404
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Fi\e[?25h"
+  - delay: 234
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Fil\e[?25h"
+  - delay: 206
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program File\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\e[?25h"
+  - delay: 925
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\\e[?25h"
+  - delay: 2154
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\M\e[?25h"
+  - delay: 210
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\Ma\e[?25h"
+  - delay: 278
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\Mar\e[?25h"
+  - delay: 391
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\Mari\e[?25h"
+  - delay: 172
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\Maria\e[?25h"
+  - delay: 1338
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaD\e[?25h"
+  - delay: 408
+    content: "\e[m\e[?25l"
+  - delay: 28
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB\e[?25h"
+  - delay: 551
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB \e[?25h"
+  - delay: 607
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 1\e[?25h"
+  - delay: 198
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12\e[?25h"
+  - delay: 525
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.\e[?25h"
+  - delay: 1611
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\e[?25h"
+  - delay: 1599
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\\e[?25h"
+  - delay: 482
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\b\e[?25h"
+  - delay: 278
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\bi\e[?25h"
+  - delay: 191
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;40Hcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\bin\e[?25h"
+  - delay: 1749
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[6;38H> \e[93mcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\bin\"\e[?25h"
+  - delay: 477
+    content: "\e[m\r\n"
+  - delay: 667
+    content: 'PS C:\Program Files\MariaDB 12.1\bin> '
+  - delay: 6296
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93mm\e[?25h"
+  - delay: 433
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 244
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[7;39Hmys\e[?25h"
+  - delay: 188
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;39Hmysq\e[?25h"
+  - delay: 312
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;39Hmysql\e[?25h"
+  - delay: 1552
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[7;39Hmysql\e[m \e[?25h"
+  - delay: 842
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-\e[?25h"
+  - delay: 550
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[?25h"
+  - delay: 340
+    content: "\e[m\e[?25l"
+  - delay: 32
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 724
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 394
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 148
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 474
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 946
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 1988
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 892
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[7;39Hmysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 955
+    content: "\e[m\r\n"
+  - delay: 1102
+    content: "\e[91mmysql : The term 'mysql' is not recognized as the name of a cmdlet, function, script file, or operable program. Check t"
+  - delay: 10
+    content: "\e[m\e[91m\r\nhe spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:1 char:1\e[m\e[82X\e[91m\r\n+ mysql -u root -p\e[m\e[80X\e[91m\r\n+ ~~~~~\e[m\e[91X\e[91m\r\n    + CategoryInfo          : ObjectNotFound: (mysql:String) [], CommandNotFoundException\e[m\e[9X\e[91m\r\n    + FullyQualifiedErrorId : CommandNotFoundException\e[m\e[44X\e[91m\r\n \e[m\e[97X\r\n"
+  - delay: 177
+    content: "\r\n"
+  - delay: 23
+    content: "Suggestion [3,General]: The command mysql was not found, but does exist in the current location. Windows PowerShell does\r\n not load commands from the current location by default. If you trust this command, instead type: \".\\mysql\". See \"get-he\r\nlp about_Command_Precedence\" for more details.\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin>\e[K\e[1C"
+  - delay: 3648
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93md\e[?25h"
+  - delay: 259
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\bdi\e[?25h"
+  - delay: 311
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[20;39Hdir\e[?25h"
+  - delay: 8207
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[20;39Hdir\e[m \e[?25h"
+  - delay: 473
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[20;39Hdir\e[m m\e[?25h"
+  - delay: 614
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[20;39Hdir\e[m my\e[?25h"
+  - delay: 585
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[20;39Hdir\e[m mys\e[?25h"
+  - delay: 647
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[20;39Hdir\e[m mysq\e[?25h"
+  - delay: 259
+    content: "\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[20;39Hdir\e[m mysql\e[?25h"
+  - delay: 794
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[20;39Hdir\e[m mysq \b\e[?25h"
+  - delay: 154
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[20;39Hdir\e[m mys \b\e[?25h"
+  - delay: 151
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[20;39Hdir\e[m my \b\e[?25h"
+  - delay: 135
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[20;39Hdir\e[m m \b\e[?25h"
+  - delay: 160
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[20;39Hdir\e[m  \b\e[?25h"
+  - delay: 147
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[20;39Hdir\e[m \b\e[?25h"
+  - delay: 166
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[20;39Hdi\e[m \b\e[?25h"
+  - delay: 139
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[20;39Hd\e[m \b\e[?25h"
+  - delay: 151
+    content: "\e[?25l"
+  - delay: 14
+    content: "\b \b\e[?25h"
+  - delay: 913
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[91m\e[20;37H> \e[m.\e[?25h"
+  - delay: 518
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[20;37H> \e[93m.\\\e[?25h"
+  - delay: 916
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[20;39H.\\m\e[?25h"
+  - delay: 374
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[20;39H.\\my\e[?25h"
+  - delay: 387
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[20;39H.\\mys\e[?25h"
+  - delay: 259
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[20;39H.\\mysq\e[?25h"
+  - delay: 292
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[20;39H.\\mysql\e[?25h"
+  - delay: 2401
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[?25h"
+  - delay: 5403
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-\e[?25h"
+  - delay: 392
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[?25h"
+  - delay: 438
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 366
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 161
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 183
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 333
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 6357
+    content: "\e[?25l"
+  - delay: 90
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root "
+  - delay: 1394
+    content: "\e[?25h"
+  - delay: 601
+    content: "\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-pi"
+  - delay: 17
+    content: "\e[m\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-\e[m   \e[20;56H\e[?25h"
+  - delay: 61
+    content: "\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root  \b\e[?25h"
+  - delay: 605
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \b\e[?25h"
+  - delay: 1045
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 339
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 413
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[20;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 681
+    content: "\e[m\r\n"
+  - delay: 305
+    content: 'Enter password: '
+  - delay: 3123
+    content: '*'
+  - delay: 263
+    content: '*'
+  - delay: 186
+    content: '*'
+  - delay: 154
+    content: '*'
+  - delay: 245
+    content: '*'
+  - delay: 200
+    content: '*'
+  - delay: 339
+    content: '*'
+  - delay: 361
+    content: '*'
+  - delay: 835
+    content: "\r\n"
+  - delay: 178
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 23
+    content: "\r\nYour MariaDB connection id is 20\e[46X\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[33X\r\n\e[78X\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[10X\r\n\e[78X\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\e[78X\r\nMariaDB [(none)]> \e[60X"
+  - delay: 209603
+    content: U
+  - delay: 1444
+    content: S
+  - delay: 173
+    content: e
+  - delay: 908
+    content: "\b \b"
+  - delay: 713
+    content: E
+  - delay: 466
+    content: ' '
+  - delay: 1642
+    content: p
+  - delay: 168
+    content: e
+  - delay: 240
+    content: r
+  - delay: 144
+    content: p
+  - delay: 351
+    content: u
+  - delay: 289
+    content: s
+  - delay: 1413
+    content: k
+  - delay: 213
+    content: u
+  - delay: 1173
+    content: ;
+  - delay: 414
+    content: "\r\n"
+  - delay: 5
+    content: Database changed
+  - delay: 19
+    content: "\r\nMariaDB [perpusku]>\e[1C"
+  - delay: 285753
+    content: e
+  - delay: 772
+    content: x
+  - delay: 190
+    content: i
+  - delay: 308
+    content: t
+  - delay: 795
+    content: "\r\nBye"
+  - delay: 18
+    content: "\r\n"
+  - delay: 14
+    content: 'PS C:\Program Files\MariaDB 12.1\bin> '
+  - delay: 4455
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[91m\e[30;37H> \e[m.\e[?25h"
+  - delay: 6646
+    content: "\e[?25l"
+  - delay: 28
+    content: "\e[30;37H> \e[93m.\\\e[?25h"
+  - delay: 995
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[30;39H.\\m\e[?25h"
+  - delay: 389
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[30;39H.\\my\e[?25h"
+  - delay: 464
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[30;39H.\\mys\e[?25h"
+  - delay: 307
+    content: "\e[m\e[?25l"
+  - delay: 27
+    content: "\e[93m\e[30;39H.\\mysq\e[?25h"
+  - delay: 361
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[30;39H.\\mysql\e[?25h"
+  - delay: 1892
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[?25h"
+  - delay: 687
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-\e[?25h"
+  - delay: 477
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[?25h"
+  - delay: 263
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 1072
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 243
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 194
+    content: "\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 347
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 14035
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 1091
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 1366
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[30;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 847
+    content: "\e[25l\e[m\e[HPS C:\\Users\\Zyrex\\nama-folder-project> \e[93mcd\e[m \e[36m\"C:\\Program Files\\MariaDB 12.1\\bin\"\e[m\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[93mmysql\e[m \e[90m-u\e[m root \e[90m-p\e[m\e[K\e[91m\r\nmysql : The term 'mysql' is not recognized as the name of a cmdlet, function, script file, or operable program. Check t\e[m \e[91m\r\nhe spelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\e[K\e[91m\r\nAt line:1 char:1\e[m\e[K\e[91m\r\n+ mysql -u root -p\e[m\e[K\e[91m\r\n+ ~~~~~\e[m\e[K\e[91m\r\n    + CategoryInfo          : ObjectNotFound: (mysql:String) [], CommandNotFoundException\e[m\e[K\e[91m\r\n    + FullyQualifiedErrorId : CommandNotFoundException\e[m\e[K\e[91m\r\n \e[m\e[K\r\n\e[K\r\nSuggestion [3,General]: The command mysql was not found, but does exist in the current location. Windows PowerShell does\r\n not load commands from the current location by default. If you trust this command, instead type: \".\\mysql\". See \"get-he\r\nlp about_Command_Precedence\" for more details.\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[93m.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[m\e[K\r\nEnter password: ********\e[K\r\nWelcome to the MariaDB monitor.  Commands end with ; or \\g.\e[K\r\nYour MariaDB connection id is 20\e[K\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[K\r\n\e[K\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[K\r\n\e[K\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[K\r\n\e[K\r\nMariaDB [(none)]> USE perpusku;\e[K\r\nDatabase changed\e[K\r\nMariaDB [perpusku]> exit\e[K\r\nBye\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[93m.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[m\e[K\r\n\e[K\e[56C\e[?25h"
+  - delay: 19
+    content: "\r"
+  - delay: 114
+    content: 'Enter password: '
+  - delay: 14684
+    content: '*'
+  - delay: 283
+    content: '*'
+  - delay: 338
+    content: '*'
+  - delay: 179
+    content: '*'
+  - delay: 244
+    content: '*'
+  - delay: 237
+    content: '*'
+  - delay: 403
+    content: '*'
+  - delay: 410
+    content: '*'
+  - delay: 452
+    content: "\r\n"
+  - delay: 132
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\nYour MariaDB connection id is 21\r\nServer version: 12.1.2-MariaDB MariaDB Server\r\n\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n"
+  - delay: 11
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 4842
+    content: C
+  - delay: 242
+    content: R
+  - delay: 204
+    content: E
+  - delay: 145
+    content: A
+  - delay: 416
+    content: T
+  - delay: 268
+    content: E
+  - delay: 73515
+    content: ' '
+  - delay: 1260
+    content: "\b \b"
+  - delay: 1039
+    content: ' '
+  - delay: 873
+    content: D
+  - delay: 167
+    content: A
+  - delay: 177
+    content: T
+  - delay: 133
+    content: A
+  - delay: 336
+    content: B
+  - delay: 414
+    content: A
+  - delay: 241
+    content: S
+  - delay: 184
+    content: E
+  - delay: 707
+    content: ' '
+  - delay: 4164
+    content: k
+  - delay: 298
+    content: u
+  - delay: 998
+    content: s
+  - delay: 619
+    content: u
+  - delay: 256
+    content: k
+  - delay: 152
+    content: a
+  - delay: 5047
+    content: "\b \b"
+  - delay: 214
+    content: "\b \b"
+  - delay: 180
+    content: "\b \b"
+  - delay: 192
+    content: "\b \b"
+  - delay: 187
+    content: "\b \b"
+  - delay: 167
+    content: "\b \b"
+  - delay: 11458
+    content: "\b \b"
+  - delay: 612
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 49
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 48
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 42
+    content: "\b \b"
+  - delay: 39
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 1949
+    content: "Bye\r\nCtrl-C -- exit!"
+  - delay: 26
+    content: "\r\n"
+  - delay: 23
+    content: 'PS C:\Program Files\MariaDB 12.1\bin> '
+  - delay: 2711
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mE\e[?25h"
+  - delay: 345
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\bEX\e[?25h"
+  - delay: 398
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[30;39HEXI\e[?25h"
+  - delay: 346
+    content: "\e[m\e[?25l"
+  - delay: 38
+    content: "\e[93m\e[30;39HEXIR\e[?25h"
+  - delay: 1420
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[30;39HEXI\e[m \b\e[?25h"
+  - delay: 468
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[92m\e[30;39HEXIT\e[?25h"
+  - delay: 690
+    content: "\e[25l\e[m\e[H not load commands from the current location by default. If you trust this command, instead type: \".\\mysql\". See \"get-he\r\nlp about_Command_Precedence\" for more details.\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[93m.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[m\e[K\r\nEnter password: ********\e[K\r\nWelcome to the MariaDB monitor.  Commands end with ; or \\g.\e[K\r\nYour MariaDB connection id is 20\e[K\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[K\r\n\e[K\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[K\r\n\e[K\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[K\r\n\e[K\r\nMariaDB [(none)]> USE perpusku;\e[K\r\nDatabase changed\e[K\r\nMariaDB [perpusku]> exit\e[K\r\nBye\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[93m.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[m\e[K\r\nEnter password: ********\e[K\r\nWelcome to the MariaDB monitor.  Commands end with ; or \\g.\e[K\r\nYour MariaDB connection id is 21\e[K\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[K\r\n\e[K\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[K\r\n\e[K\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[K\r\n\e[K\r\nMariaDB [(none)]> Bye\e[K\r\nCtrl-C -- exit!\e[K\r\nPS C:\\Program Files\\MariaDB 12.1\\bin> \e[92mEXIT\e[m\e[K\r\n\e[K\e[42C\e[?25h"
+  - delay: 13
+    content: "\r"
